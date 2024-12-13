@@ -1,0 +1,291 @@
+/* Общие стили */
+body {
+    background: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    color: #777;
+}
+.sidebar {
+    background-color: #ffffff8a;
+    width: 100%; /* Ширина на всю страницу */
+    height: auto; /* Автоматическая высота */
+    padding: 10px 20px; /* Внутренний отступ */
+    box-sizing: border-box;
+    border-radius: 0; /* Убираем скругление */
+    display: flex; /* Устанавливаем флекс-контейнер */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: space-around; /* Равномерное распределение кнопок */
+}
+
+.sidebar a {
+    flex-grow: 1; /* Позволяет кнопкам масштабироваться равномерно */
+    margin: 0 5px; /* Расстояние между кнопками */
+    color: #fff;
+    text-decoration: none;
+    background-color: #20f5d2;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #e65800; /* Темный оттенок при наведении */
+}
+
+a {
+    color: #bcf520; /* Оранжевый цвет для ссылок */
+    font-weight: 400;
+}
+
+span {
+    font-weight: 300;
+    color: #7220f5;
+}
+
+.mlogin, .mregister {
+    margin: 170px auto 0;
+}
+
+
+
+.regtext {
+    font-size: 13px;
+    margin-top: 26px;
+    color: #777;
+}
+
+/* Контейнеры */
+.container {
+    padding: 25px 16px 25px 10px;
+    font-weight: 400;
+    width: 350px;
+    background: #fff; /* Белый фон для контейнера */
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+#welcome {
+    width: 500px;
+    padding: 30px;
+    background: #fff;
+    margin: 160px auto 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+.container h1 {
+    color: #777;
+    text-align: center;
+    font-weight: 300;
+    border: 1px dashed #777;
+    margin-top: 13px;
+}
+
+.container label {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Стили для форм и ввода */
+.container form .input,
+.container input[type=text],
+.container input[type=password],
+.container input[type=e] {
+    background: #fbfbfb;
+    font-size: 24px;
+    line-height: 1;
+    width: 100%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #d9d9d9;
+}
+
+.container form .input:focus {
+    border: 1px solid #207cf5; /* Оранжевая рамка при фокусе */
+    box-shadow: 0 0 3px rgba(245,130,32,0.75);
+}
+
+/* Кнопки */
+.button{
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1df7ec;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #434190;
+}
+
+
+/* Подвал */
+footer {
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Стили для обложек книг */
+/* Стили для карточек книг */
+.equipment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Расстояние между карточками */
+    justify-content: center; /* Центровка сетки */
+}
+
+.equipment-card {
+    width: 200px; /* Фиксированная ширина карточки */
+    height: 300px; /* Фиксированная высота карточки */
+    text-align: center;
+    background-color: #d99f9f3c;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13); /* Тень для карточки */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределение пространства внутри карточки */
+}
+
+.equipment-card img {
+    width: 100%; /* Ширина изображения соответствует карточке */
+    height: 190px; /* Фиксированная высота изображения */
+    object-fit: cover; /* Обрезка изображения */
+    border-radius: 4px;
+}
+
+.equipment-card p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+    overflow: hidden; /* Убираем лишние пробелы */
+    text-overflow: ellipsis; /* Текст в одну строку, если недостаточно места */
+}
+
+.equipment-card .title {
+    font-weight: bold;
+    color: #cef520;
+    word-wrap: break-word; /* Перенос длинных слов */
+}
+
+.equipment-card a {
+    background-color: #20f57c;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.equipment-card a:hover {
+    background-color: #00e6db; /* Темнее при наведении */
+}
+
+
+.search-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #eed8c0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #434190;
+}
+
+.comments-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.comment-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.form {
+    background-color: #aedbdb;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Более резкий теневой эффект */
+    width: 500px;
+    position: relative; /* Для позиционирования */
+    z-index: 1; /* Повышаем z-index для модального окна */
+    margin: 0 auto; /* Центрирование формы */
+}
+
+.login-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+.previous-element {
+    margin-bottom: 20px; /* Отступ снизу для предыдущего элемента */
+}
+
